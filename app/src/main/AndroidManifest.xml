@@ -13,11 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StreamComics"
         tools:targetApi="29">
-        <activity
-            android:name=".LoginRegister"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginRegister"
             android:exported="false" />
     </application>
 
