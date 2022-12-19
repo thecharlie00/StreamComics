@@ -14,14 +14,15 @@ class Library : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        setContentView(R.layout.activity_library)
-
         binding = ActivityLibraryBinding.inflate(layoutInflater)
-        startAdapter()
+        setContentView(binding.root)
+
+
+
         archiveList.add(Archivo("Spiderman 1"))
         archiveList.add(Archivo("Spiderman 2"))
         archiveList.add(Archivo("Spiderman 3"))
+        startAdapter()
 
     }
 

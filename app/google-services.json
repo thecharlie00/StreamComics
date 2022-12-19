@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "427962794494",
+    "project_id": "streamcoimics",
+    "storage_bucket": "streamcoimics.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427962794494:android:3d848c58c1d4e9eb1e40af",
+        "android_client_info": {
+          "package_name": "com.example.streamcomics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427962794494-2stbvvovvnij4a7qu7e93n21gck5ogsg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaiSnCaD50alMsq8OYo5AIozMpCa3KN0A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427962794494-2stbvvovvnij4a7qu7e93n21gck5ogsg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

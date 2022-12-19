@@ -66,21 +66,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.58" />
 
-    <TextView
-        android:id="@+id/dateRegisterText"
-        android:layout_width="126dp"
-        android:layout_height="81dp"
-        android:text="BIRTHDAY"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.136"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.672" />
-
     <Button
         android:id="@+id/nextRegister"
         android:layout_width="wrap_content"
@@ -143,16 +128,4 @@
         app:layout_constraintTop_toBottomOf="@+id/mailRegister"
         app:layout_constraintVertical_bias="0.226" />
 
-    <EditText
-        android:id="@+id/registerDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="date"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.89"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerPassword2"
-        app:layout_constraintVertical_bias="0.068" />
 </androidx.constraintlayout.widget.ConstraintLayout>
