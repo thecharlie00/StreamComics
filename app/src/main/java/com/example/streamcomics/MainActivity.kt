@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.start.setOnClickListener{
-            startActivity(Intent(this, Library::class.java))
+            startActivity(Intent(this, LoginRegister::class.java))
         }
     }
 }
