@@ -70,7 +70,7 @@
         android:id="@+id/dateRegisterText"
         android:layout_width="126dp"
         android:layout_height="81dp"
-        android:text="PASSWORD"
+        android:text="BIRTHDAY"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"

@@ -18,10 +18,11 @@ class Library : AppCompatActivity() {
         setContentView(R.layout.activity_library)
 
         binding = ActivityLibraryBinding.inflate(layoutInflater)
+        startAdapter()
         archiveList.add(Archivo("Spiderman 1"))
         archiveList.add(Archivo("Spiderman 2"))
         archiveList.add(Archivo("Spiderman 3"))
-        startAdapter()
+
     }
 
     private  fun startAdapter(){

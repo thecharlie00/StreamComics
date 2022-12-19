@@ -9,8 +9,8 @@ import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 
 class RecycleArchive(var context: Context, var archiveList:MutableList<Archivo>):
-    RecyclerView.Adapter<RecycleArchive.miHolder>() {
-    inner class  miHolder(itemView: View):RecyclerView.ViewHolder(itemView){
+    RecyclerView.Adapter<RecycleArchive.MiHolder>() {
+    inner class  MiHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         lateinit var archiveSlot: TextView
         init {
             archiveSlot = itemView.findViewById(R.id.archive)
@@ -18,12 +18,12 @@ class RecycleArchive(var context: Context, var archiveList:MutableList<Archivo>)
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): miHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MiHolder {
         var itemView = LayoutInflater.from(context).inflate(R.layout.archive_slot, parent, false)
-        return miHolder(itemView)
+        return MiHolder(itemView)
     }
 
-    override fun onBindViewHolder(holder: miHolder, position: Int) {
+    override fun onBindViewHolder(holder: MiHolder, position: Int) {
         var archive = archiveList[position]
         holder.archiveSlot.text = archive.Title
     }
