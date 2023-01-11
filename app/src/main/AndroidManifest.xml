@@ -14,6 +14,9 @@
         android:theme="@style/Theme.StreamComics"
         tools:targetApi="29">
         <activity
+            android:name=".PdfActivity"
+            android:exported="false" />
+        <activity
             android:name=".Library"
             android:exported="false" />
         <activity
