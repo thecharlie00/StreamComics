@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "427962794494",
-    "project_id": "streamcoimics",
-    "storage_bucket": "streamcoimics.appspot.com"
+    "project_number": "245381434810",
+    "project_id": "streamcomics-20a04",
+    "storage_bucket": "streamcomics-20a04.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:427962794494:android:3d848c58c1d4e9eb1e40af",
+        "mobilesdk_app_id": "1:245381434810:android:ea5fad5274f2e61003a183",
         "android_client_info": {
           "package_name": "com.example.streamcomics"
         }
       },
       "oauth_client": [
         {
-          "client_id": "427962794494-2stbvvovvnij4a7qu7e93n21gck5ogsg.apps.googleusercontent.com",
+          "client_id": "245381434810-tjlga08k8a6bpjogq1ubljjm4sn2juof.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBaiSnCaD50alMsq8OYo5AIozMpCa3KN0A"
+          "current_key": "AIzaSyDBort911fyDXE5-gmYZgL_Zbap1XB55a8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "427962794494-2stbvvovvnij4a7qu7e93n21gck5ogsg.apps.googleusercontent.com",
+              "client_id": "245381434810-tjlga08k8a6bpjogq1ubljjm4sn2juof.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
