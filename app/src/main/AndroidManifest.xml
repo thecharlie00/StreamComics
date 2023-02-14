@@ -14,19 +14,22 @@
         android:theme="@style/Theme.StreamComics"
         tools:targetApi="29">
         <activity
+            android:name=".GameActivity"
+            android:exported="false" />
+        <activity
             android:name=".RealTimeDatabaseActivity"
             android:exported="false" />
         <activity
             android:name=".Library"
             android:exported="false" />
         <activity
-            android:name=".Register"
+            android:name=".login.Register"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".login.Login"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".login.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,7 +38,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginRegister"
+            android:name=".login.LoginRegister"
             android:exported="false" />
     </application>
 
