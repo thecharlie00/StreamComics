@@ -14,13 +14,7 @@
         android:theme="@style/Theme.StreamComics"
         tools:targetApi="29">
         <activity
-            android:name=".GameActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RealTimeDatabaseActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Library"
+            android:name=".hangmanGame.GameActivity"
             android:exported="false" />
         <activity
             android:name=".login.Register"

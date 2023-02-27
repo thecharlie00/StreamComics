@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.streamcomics.R
 import com.example.streamcomics.databinding.ActivityMainBinding
+import com.example.streamcomics.hangmanGame.GameActivity
 
 private  lateinit var binding: ActivityMainBinding
 class MainActivity : AppCompatActivity() {
@@ -14,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.start.setOnClickListener{
-            startActivity(Intent(this, LoginRegister::class.java))
+            startActivity(Intent(this, GameActivity::class.java))
         }
     }
 }
