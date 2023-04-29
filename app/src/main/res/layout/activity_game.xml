@@ -6,46 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".hangmanGame.GameActivity">
 
-    <EditText
-        android:id="@+id/guessLetterInput"
-        android:layout_width="49dp"
-        android:layout_height="27dp"
-        android:layout_marginBottom="276dp"
-        android:ems="10"
-        android:inputType="textPersonName"
+    <ImageView
+        android:id="@+id/bgKeyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="34"
+        android:scaleY="1.1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hangmanTextOutput"
-        app:layout_constraintVertical_bias="0.828" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bg_wood" />
+
+    <ImageView
+        android:id="@+id/bgBackground"
+        android:layout_width="274dp"
+        android:layout_height="286dp"
+        android:scaleX="2"
+        android:scaleY="1.6"
+        app:layout_constraintBottom_toTopOf="@+id/bgKeyboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541"
+        app:srcCompat="@drawable/bg_green" />
 
     <TextView
         android:id="@+id/hangmanTextOutput"
         android:layout_width="153dp"
         android:layout_height="91dp"
-        android:layout_marginTop="172dp"
-        android:layout_marginBottom="182dp"
+        android:layout_marginTop="344dp"
         android:text="Hello World"
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/guessLetterInput"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/guessButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Guess"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toEndOf="@+id/guessLetterInput"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.623" />
 
     <TextView
         android:id="@+id/alphabet"
@@ -55,8 +53,285 @@
         android:text="a,t"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hangmanTextOutput"
-        app:layout_constraintVertical_bias="0.057" />
+        app:layout_constraintVertical_bias="0.025" />
+
+    <ImageView
+        android:id="@+id/bgDecoration"
+        android:layout_width="412dp"
+        android:layout_height="77dp"
+        android:scaleX="2"
+        app:layout_constraintBottom_toTopOf="@+id/hangmanTextOutput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/curtain_straight" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/keyboard"
+        android:layout_width="407dp"
+        android:layout_height="267dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bgKeyboard"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/bKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/aKey"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/b" />
+
+        <ImageView
+            android:id="@+id/aKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/a" />
+
+        <ImageView
+            android:id="@+id/fKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/eKey"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/f" />
+
+        <ImageView
+            android:id="@+id/dKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/cKey"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/d" />
+
+        <ImageView
+            android:id="@+id/eKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/dKey"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/e" />
+
+        <ImageView
+            android:id="@+id/cKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/bKey"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/c" />
+
+        <ImageView
+            android:id="@+id/gKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="56dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/aKey"
+            app:srcCompat="@drawable/g" />
+
+        <ImageView
+            android:id="@+id/hKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/gKey"
+            app:layout_constraintTop_toBottomOf="@+id/bKey"
+            app:srcCompat="@drawable/h" />
+
+        <ImageView
+            android:id="@+id/iKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/hKey"
+            app:layout_constraintTop_toBottomOf="@+id/cKey"
+            app:srcCompat="@drawable/i" />
+
+        <ImageView
+            android:id="@+id/kKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/iKey"
+            app:layout_constraintTop_toBottomOf="@+id/dKey"
+            app:srcCompat="@drawable/k" />
+
+        <ImageView
+            android:id="@+id/lKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/kKey"
+            app:layout_constraintTop_toBottomOf="@+id/eKey"
+            app:srcCompat="@drawable/l" />
+
+        <ImageView
+            android:id="@+id/mKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/lKey"
+            app:layout_constraintTop_toBottomOf="@+id/fKey"
+            app:srcCompat="@drawable/m" />
+
+        <ImageView
+            android:id="@+id/nKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gKey"
+            app:srcCompat="@drawable/n" />
+
+        <ImageView
+            android:id="@+id/oKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/nKey"
+            app:layout_constraintTop_toBottomOf="@+id/hKey"
+            app:srcCompat="@drawable/o" />
+
+        <ImageView
+            android:id="@+id/pKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/oKey"
+            app:layout_constraintTop_toBottomOf="@+id/iKey"
+            app:srcCompat="@drawable/p" />
+
+        <ImageView
+            android:id="@+id/qKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/pKey"
+            app:layout_constraintTop_toBottomOf="@+id/kKey"
+            app:srcCompat="@drawable/q" />
+
+        <ImageView
+            android:id="@+id/rKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/qKey"
+            app:layout_constraintTop_toBottomOf="@+id/lKey"
+            app:srcCompat="@drawable/r" />
+
+        <ImageView
+            android:id="@+id/sKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/rKey"
+            app:layout_constraintTop_toBottomOf="@+id/mKey"
+            app:srcCompat="@drawable/s" />
+
+        <ImageView
+            android:id="@+id/tKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nKey"
+            app:srcCompat="@drawable/t" />
+
+        <ImageView
+            android:id="@+id/uKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/tKey"
+            app:layout_constraintTop_toBottomOf="@+id/oKey"
+            app:srcCompat="@drawable/u" />
+
+        <ImageView
+            android:id="@+id/vKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/uKey"
+            app:layout_constraintTop_toBottomOf="@+id/pKey"
+            app:srcCompat="@drawable/v" />
+
+        <ImageView
+            android:id="@+id/wKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/vKey"
+            app:layout_constraintTop_toBottomOf="@+id/qKey"
+            app:srcCompat="@drawable/w" />
+
+        <ImageView
+            android:id="@+id/xKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/wKey"
+            app:srcCompat="@drawable/x" />
+
+        <ImageView
+            android:id="@+id/yKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/xKey"
+            app:srcCompat="@drawable/y" />
+
+        <ImageView
+            android:id="@+id/zKey"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/yKey"
+            app:srcCompat="@drawable/z" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

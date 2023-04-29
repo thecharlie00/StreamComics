@@ -12,4 +12,7 @@ interface APIhangman {
 
     @POST("/guess")
     fun guessLetter(@Body body: Map<String, String?>): Call<HangmanModel>
+
+    @GET("/game")
+    fun getSolution(@Query("token") token: String): Call<HangmanModel>
 }
